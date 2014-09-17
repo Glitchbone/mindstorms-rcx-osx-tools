@@ -52,7 +52,7 @@ We will use firm0328.lgo for now.
 
 Send it to your brick:
 ```sh
-nqc -firmware firmwares/firm0328.lgo -v -T RCX2 -S /dev/cu.YOURSERIALPORT
+nqc -S/dev/cu.PL2303-XXXX -firmware firmwares/firm0328.lgo
 ```
 This will take a few minutes.
 
@@ -62,9 +62,9 @@ I provide some example programs (from the NQC website) in the /examples folder
 
 Upload the music.nqc program with this command:
 ```sh
-nqc -d -pgm 1 examples/music.nqc -v -T RCX2 -S /dev/cu.YOURSERIALPORT
+nqc -S/dev/cu.PL2303-XXXX -TRCX2 -d -pgm 1 examples/music.nqc
 ```
-When the transfer is complete, you can test it on your brick by selecting PGM slot 1 and running it
+When the transfer is complete, you can test it on your brick by selecting program slot 1 and running it
 
 For more informations on the NQC utility, please refer to the official manual:  
 http://bricxcc.sourceforge.net/nqc/doc/NQC_Manual.pdf
