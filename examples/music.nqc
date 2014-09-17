@@ -1,0 +1,8 @@
+task main()
+{
+    PlayTone(262,40);  Wait(50);
+    PlayTone(294,40);  Wait(50);
+    PlayTone(330,40);  Wait(50);
+    PlayTone(294,40);  Wait(50);
+    PlayTone(262,160); Wait(200);
+}
