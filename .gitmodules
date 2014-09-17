@@ -1,0 +1,3 @@
+[submodule "nqc"]
+	path = nqc
+	url = git://github.com/jverne/nqc.git
