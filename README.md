@@ -13,14 +13,15 @@ NQC is provided as a simple command line program which acts as a compiler and a 
 
 Follow these simple steps and you'll be able to enjoy programming your old RCX brick on a modern Intel Mac.
 
-(For the lazy ones, I also provide a compiled version inside the /binaries folder. Copy it inside your /usr/local/bin directory)
-
 **The only requirement is a Serial to USB adapter** to connect the IR Tower to your computer.  
-Find a cheap one based on the PL2303 chip and install the kernel extension: http://www.xbsd.nl/2011/07/pl2303-serial-usb-on-osx-lion.html
+Find a cheap one based on the **PL2303** chip and install the kernel extension: http://www.xbsd.nl/2011/07/pl2303-serial-usb-on-osx-lion.html
 
 (I don't know if NQC works with the USB IR Tower on OS X since I only have the serial version)
 
 ##1) Building NQC from sources
+
+For the lazy ones, I also provide a compiled version inside the /binaries folder.  
+(If you want to use it, copy the nqc executable inside your /usr/local/bin directory and go directly to step 2)
 
 ```sh
 git clone https://github.com/Glitchbone/mindstorms-rcx-osx-tools.git
@@ -39,7 +40,7 @@ Find the name of your serial port:
 ```sh
 ls /dev/cu.*
 ```
-This command will return a list of available devices. Look for something like "/dev/cu.usbserial" and write it down.
+This command will return a list of available devices. Look for something like "/dev/cu.PL2303-XXXX" and write it down.
 
 I provide 3 LEGO firmware in this repository:
 
